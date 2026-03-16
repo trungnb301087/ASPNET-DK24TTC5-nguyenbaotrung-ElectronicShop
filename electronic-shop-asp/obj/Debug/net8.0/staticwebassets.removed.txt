@@ -1,0 +1,2 @@
+D:\FL\project_BT\electronic-shop-asp\electronic-shop-asp\wwwroot\css\site.css
+D:\FL\project_BT\electronic-shop-asp\electronic-shop-asp\wwwroot\js\site.js
