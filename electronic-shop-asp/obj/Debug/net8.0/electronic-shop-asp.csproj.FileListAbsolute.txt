@@ -66,3 +66,4 @@ D:\FL\project_BT\electronic-shop-asp\electronic-shop-asp\obj\Debug\net8.0\refint
 D:\FL\project_BT\electronic-shop-asp\electronic-shop-asp\obj\Debug\net8.0\electronic-shop-asp.pdb
 D:\FL\project_BT\electronic-shop-asp\electronic-shop-asp\obj\Debug\net8.0\electronic-shop-asp.genruntimeconfig.cache
 D:\FL\project_BT\electronic-shop-asp\electronic-shop-asp\obj\Debug\net8.0\ref\electronic-shop-asp.dll
+D:\FL\project_BT\electronic-shop-asp\electronic-shop-asp\obj\Debug\net8.0\electronic-shop-asp.sourcelink.json

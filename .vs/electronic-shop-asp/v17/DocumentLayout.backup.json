@@ -3,20 +3,68 @@
   "WorkspaceRootPath": "D:\\FL\\project_BT\\electronic-shop-asp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\migrations\\20260313094619_trung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\migrations\\20260313094619_trung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\views\\product\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\views\\product\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\migrations\\20260313094619_trung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\migrations\\20260313094619_trung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -27,28 +75,8 @@
       "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|d:\\fl\\project_bt\\electronic-shop-asp\\electronic-shop-asp\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50CC2734-8494-4C86-8E24-DE61E9EBB901}|electronic-shop-asp\\electronic-shop-asp.csproj|solutionrelative:electronic-shop-asp\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,59 +114,124 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "electronic-shop-asp\\Views\\Account\\Register.cshtml",
+              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Views\\Account\\Register.cshtml*",
+              "RelativeToolTip": "electronic-shop-asp\\Views\\Account\\Register.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-17T09:40:38.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "electronic-shop-asp\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Views\\Account\\Login.cshtml*",
+              "RelativeToolTip": "electronic-shop-asp\\Views\\Account\\Login.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-17T09:40:11.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "electronic-shop-asp\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Controllers\\AccountController.cs*",
+              "RelativeToolTip": "electronic-shop-asp\\Controllers\\AccountController.cs*",
+              "ViewState": "AgIAADsAAAAAAAAAAAAYwFAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T09:38:03.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "electronic-shop-asp\\Models\\OrderDetail.cs",
+              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "electronic-shop-asp\\Models\\OrderDetail.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T09:28:16.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Views\\Product\\Detail.cshtml",
+              "RelativeDocumentMoniker": "electronic-shop-asp\\Views\\Product\\Detail.cshtml",
+              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Views\\Product\\Detail.cshtml",
+              "RelativeToolTip": "electronic-shop-asp\\Views\\Product\\Detail.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAFUAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-17T08:33:06.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "electronic-shop-asp\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "electronic-shop-asp\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T08:31:20.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "electronic-shop-asp\\Models\\Category.cs",
+              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\Category.cs",
+              "RelativeToolTip": "electronic-shop-asp\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T09:25:22.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "electronic-shop-asp\\Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "electronic-shop-asp\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAQwHoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-13T10:00:22.239Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "electronic-shop-asp\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Views\\Shared\\_Layout.cshtml*",
-              "RelativeToolTip": "electronic-shop-asp\\Views\\Shared\\_Layout.cshtml*",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAowPkAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-13T09:59:56.584Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20260313094619_trung.cs",
-              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Migrations\\20260313094619_trung.cs",
-              "RelativeDocumentMoniker": "electronic-shop-asp\\Migrations\\20260313094619_trung.cs",
-              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Migrations\\20260313094619_trung.cs",
-              "RelativeToolTip": "electronic-shop-asp\\Migrations\\20260313094619_trung.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "electronic-shop-asp\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "electronic-shop-asp\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T09:46:20.474Z",
+              "WhenOpened": "2026-03-17T08:56:36.971Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Program.cs",
-              "RelativeDocumentMoniker": "electronic-shop-asp\\Program.cs",
-              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Program.cs",
-              "RelativeToolTip": "electronic-shop-asp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T09:33:46.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\appsettings.json",
               "RelativeDocumentMoniker": "electronic-shop-asp\\appsettings.json",
@@ -146,77 +239,24 @@
               "RelativeToolTip": "electronic-shop-asp\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-13T09:31:40.678Z",
+              "WhenOpened": "2026-03-13T09:31:40.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "electronic-shop-asp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "electronic-shop-asp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAOcAAAAAAAAAAAAowBABAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-13T09:59:56.584Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "electronic-shop-asp\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "electronic-shop-asp\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T09:29:30.291Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CartItem.cs",
-              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\CartItem.cs",
-              "RelativeDocumentMoniker": "electronic-shop-asp\\Models\\CartItem.cs",
-              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\CartItem.cs",
-              "RelativeToolTip": "electronic-shop-asp\\Models\\CartItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T09:28:38.876Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "OrderDetail.cs",
-              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\OrderDetail.cs",
-              "RelativeDocumentMoniker": "electronic-shop-asp\\Models\\OrderDetail.cs",
-              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\OrderDetail.cs",
-              "RelativeToolTip": "electronic-shop-asp\\Models\\OrderDetail.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA1wBIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T09:28:16.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Order.cs",
-              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "electronic-shop-asp\\Models\\Order.cs",
-              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\Order.cs",
-              "RelativeToolTip": "electronic-shop-asp\\Models\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T09:27:59.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\User.cs",
-              "RelativeDocumentMoniker": "electronic-shop-asp\\Models\\User.cs",
-              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\User.cs",
-              "RelativeToolTip": "electronic-shop-asp\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T09:26:27.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\Product.cs",
               "RelativeDocumentMoniker": "electronic-shop-asp\\Models\\Product.cs",
@@ -229,16 +269,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Category.cs",
-              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "electronic-shop-asp\\Models\\Category.cs",
-              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\Category.cs",
-              "RelativeToolTip": "electronic-shop-asp\\Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "electronic-shop-asp\\Models\\CartItem.cs",
+              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\CartItem.cs",
+              "RelativeToolTip": "electronic-shop-asp\\Models\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T09:25:22.47Z",
+              "WhenOpened": "2026-03-13T09:28:38.876Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Program.cs",
+              "RelativeDocumentMoniker": "electronic-shop-asp\\Program.cs",
+              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Program.cs*",
+              "RelativeToolTip": "electronic-shop-asp\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T09:33:46.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\User.cs",
+              "RelativeDocumentMoniker": "electronic-shop-asp\\Models\\User.cs",
+              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\User.cs",
+              "RelativeToolTip": "electronic-shop-asp\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T09:26:27.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "electronic-shop-asp\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "electronic-shop-asp\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T09:29:30.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20260313094619_trung.cs",
+              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Migrations\\20260313094619_trung.cs",
+              "RelativeDocumentMoniker": "electronic-shop-asp\\Migrations\\20260313094619_trung.cs",
+              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Migrations\\20260313094619_trung.cs",
+              "RelativeToolTip": "electronic-shop-asp\\Migrations\\20260313094619_trung.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T09:46:20.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "electronic-shop-asp\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "electronic-shop-asp\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-17T08:43:35.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "electronic-shop-asp\\Models\\Order.cs",
+              "ToolTip": "D:\\FL\\project_BT\\electronic-shop-asp\\electronic-shop-asp\\Models\\Order.cs",
+              "RelativeToolTip": "electronic-shop-asp\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T09:27:59.009Z"
             }
           ]
         },
