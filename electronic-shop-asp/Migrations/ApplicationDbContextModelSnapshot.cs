@@ -22,6 +22,51 @@ namespace electronic_shop_asp.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("electronic_shop_asp.Models.Cart", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
+
+                    b.ToTable("Carts");
+                });
+
+            modelBuilder.Entity("electronic_shop_asp.Models.CartItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CartId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CartId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("CartItems");
+                });
+
             modelBuilder.Entity("electronic_shop_asp.Models.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -174,6 +219,36 @@ namespace electronic_shop_asp.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("electronic_shop_asp.Models.Cart", b =>
+                {
+                    b.HasOne("electronic_shop_asp.Models.User", "User")
+                        .WithOne("Cart")
+                        .HasForeignKey("electronic_shop_asp.Models.Cart", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("electronic_shop_asp.Models.CartItem", b =>
+                {
+                    b.HasOne("electronic_shop_asp.Models.Cart", "Cart")
+                        .WithMany("CartItems")
+                        .HasForeignKey("CartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("electronic_shop_asp.Models.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cart");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("electronic_shop_asp.Models.OrderDetail", b =>
                 {
                     b.HasOne("electronic_shop_asp.Models.Order", "Order")
@@ -204,6 +279,11 @@ namespace electronic_shop_asp.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("electronic_shop_asp.Models.Cart", b =>
+                {
+                    b.Navigation("CartItems");
+                });
+
             modelBuilder.Entity("electronic_shop_asp.Models.Category", b =>
                 {
                     b.Navigation("Products");
@@ -212,6 +292,11 @@ namespace electronic_shop_asp.Migrations
             modelBuilder.Entity("electronic_shop_asp.Models.Order", b =>
                 {
                     b.Navigation("OrderDetails");
+                });
+
+            modelBuilder.Entity("electronic_shop_asp.Models.User", b =>
+                {
+                    b.Navigation("Cart");
                 });
 #pragma warning restore 612, 618
         }

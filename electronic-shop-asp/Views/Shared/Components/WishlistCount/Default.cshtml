@@ -1,0 +1,20 @@
+﻿@model int
+
+<a asp-controller="Wishlist"
+   asp-action="Index"
+   class="text-muted d-flex align-items-center justify-content-center">
+
+    <span class="rounded-circle btn-md-square border position-relative">
+
+        <i class="fas fa-heart"></i>
+
+        @if (Model > 0)
+        {
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                @Model
+            </span>
+        }
+
+    </span>
+
+</a>

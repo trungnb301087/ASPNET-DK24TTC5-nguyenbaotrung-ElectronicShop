@@ -1,0 +1,21 @@
+﻿@model electronic_shop_asp.Models.Order
+
+@{
+    ViewData["Title"] = "Đặt hàng thành công";
+}
+
+<div class="container py-5 text-center">
+    <div class="border rounded p-5 shadow-sm">
+        <h2 class="text-success mb-3">Đặt hàng thành công!</h2>
+        <p>Mã đơn hàng của bạn là: <strong>#@Model.Id</strong></p>
+        <p>Tổng tiền: <strong>@Model.TotalAmount.ToString("N0") đ</strong></p>
+
+        <a asp-controller="Order" asp-action="History" class="btn btn-primary me-2">
+            Xem lịch sử đơn hàng
+        </a>
+
+        <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">
+            Về trang chủ
+        </a>
+    </div>
+</div>

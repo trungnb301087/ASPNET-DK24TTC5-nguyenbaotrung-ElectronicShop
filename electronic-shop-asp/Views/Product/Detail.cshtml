@@ -22,119 +22,8 @@
 <div class="container-fluid shop py-5">
     <div class="container py-5">
         <div class="row g-4">
-            <!-- Sidebar trái -->
-            <div class="col-lg-5 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="input-group w-100 mx-auto d-flex mb-4">
-                    <input type="search" class="form-control p-3" placeholder="Từ khóa"
-                           aria-describedby="search-icon-1">
-                    <span id="search-icon-1" class="input-group-text p-3">
-                        <i class="fa fa-search"></i>
-                    </span>
-                </div>
-
-                <div class="product-categories mb-4">
-                    <h4>Danh mục sản phẩm</h4>
-                    <ul class="list-unstyled">
-                        <li>
-                            <div class="categories-item">
-                                <a href="#" class="text-dark">
-                                    <i class="fas fa-microchip text-secondary me-2"></i>Điện trở
-                                </a>
-                                <span>(3)</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="categories-item">
-                                <a href="#" class="text-dark">
-                                    <i class="fas fa-microchip text-secondary me-2"></i>Tụ điện
-                                </a>
-                                <span>(5)</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="categories-item">
-                                <a href="#" class="text-dark">
-                                    <i class="fas fa-microchip text-secondary me-2"></i>IC
-                                </a>
-                                <span>(2)</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="categories-item">
-                                <a href="#" class="text-dark">
-                                    <i class="fas fa-microchip text-secondary me-2"></i>Cảm biến
-                                </a>
-                                <span>(8)</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="categories-item">
-                                <a href="#" class="text-dark">
-                                    <i class="fas fa-microchip text-secondary me-2"></i>Module
-                                </a>
-                                <span>(5)</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="featured-product mb-4">
-                    <h4 class="mb-3">Sản phẩm nổi bật</h4>
-
-                    <div class="featured-product-item">
-                        <div class="rounded me-4" style="width: 100px; height: 100px;">
-                            <img src="~/img/product-3.png" class="img-fluid rounded" alt="Image">
-                        </div>
-                        <div>
-                            <h6 class="mb-2">Arduino Uno R3</h6>
-                            <div class="d-flex mb-2">
-                                <i class="fa fa-star text-secondary"></i>
-                                <i class="fa fa-star text-secondary"></i>
-                                <i class="fa fa-star text-secondary"></i>
-                                <i class="fa fa-star text-secondary"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <h5 class="fw-bold me-2">220.000đ</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="featured-product-item">
-                        <div class="rounded me-4" style="width: 100px; height: 100px;">
-                            <img src="~/img/product-4.png" class="img-fluid rounded" alt="Image">
-                        </div>
-                        <div>
-                            <h6 class="mb-2">Module Relay</h6>
-                            <div class="d-flex mb-2">
-                                <i class="fa fa-star text-secondary"></i>
-                                <i class="fa fa-star text-secondary"></i>
-                                <i class="fa fa-star text-secondary"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <h5 class="fw-bold me-2">70.000đ</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="#">
-                    <div class="position-relative">
-                        <img src="~/img/product-banner-2.jpg" class="img-fluid w-100 rounded" alt="Image">
-                        <div class="text-center position-absolute d-flex flex-column align-items-center justify-content-center rounded p-4"
-                             style="width: 100%; height: 100%; top: 0; right: 0; background: rgba(242, 139, 0, 0.3);">
-                            <h5 class="display-6 text-primary">GIẢM GIÁ</h5>
-                            <h4 class="text-secondary">Ưu đãi lên tới 50%</h4>
-                            <a href="#" class="btn btn-primary rounded-pill px-4">Mua ngay</a>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
             <!-- Nội dung chi tiết -->
-            <div class="col-lg-7 col-xl-9 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-7 col-xl-12 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="row g-4 single-product">
                     <div class="col-xl-6">
                         <div class="single-inner bg-light rounded p-4 text-center">
@@ -208,7 +97,9 @@
                             </div>
                         </div>
 
-                        <a href="#"
+                        <a asp-controller="Cart"
+                           asp-action="AddToCart"
+                           asp-route-productId="@Model.Id"
                            class="btn btn-primary border border-secondary rounded-pill px-4 py-2 mb-4 text-primary">
                             <i class="fa fa-shopping-bag me-2 text-white"></i> Thêm vào giỏ hàng
                         </a>
@@ -325,85 +216,6 @@
     </div>
 </div>
 
-<!-- Sản phẩm liên quan -->
-<div class="container-fluid related-product">
-    <div class="container">
-        <div class="mx-auto text-center pb-5" style="max-width: 700px;">
-            <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius wow fadeInUp"
-                data-wow-delay="0.1s">
-                Sản phẩm liên quan
-            </h4>
-            <p class="wow fadeInUp" data-wow-delay="0.2s">
-                Một số sản phẩm cùng danh mục mà bạn có thể quan tâm.
-            </p>
-        </div>
-
-        <div class="row g-4 pt-4">
-            <div class="col-md-4">
-                <div class="related-item rounded">
-                    <div class="related-item-inner border rounded">
-                        <div class="related-item-inner-item">
-                            <img src="~/img/product-3.png" class="img-fluid w-100 rounded-top" alt="">
-                            <div class="related-new">Mới</div>
-                        </div>
-                        <div class="text-center rounded-bottom p-4">
-                            <a href="#" class="d-block mb-2">Cảm biến</a>
-                            <a href="#" class="d-block h4">Cảm biến DHT11</a>
-                            <span class="text-primary fs-5">120.000đ</span>
-                        </div>
-                    </div>
-                    <div class="related-item-add border border-top-0 rounded-bottom text-center p-4 pt-0">
-                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4">
-                            <i class="fas fa-shopping-cart me-2"></i> Thêm vào giỏ
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="related-item rounded">
-                    <div class="related-item-inner border rounded">
-                        <div class="related-item-inner-item">
-                            <img src="~/img/product-4.png" class="img-fluid w-100 rounded-top" alt="">
-                            <div class="related-new">Mới</div>
-                        </div>
-                        <div class="text-center rounded-bottom p-4">
-                            <a href="#" class="d-block mb-2">Module</a>
-                            <a href="#" class="d-block h4">Relay 1 kênh</a>
-                            <span class="text-primary fs-5">70.000đ</span>
-                        </div>
-                    </div>
-                    <div class="related-item-add border border-top-0 rounded-bottom text-center p-4 pt-0">
-                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4">
-                            <i class="fas fa-shopping-cart me-2"></i> Thêm vào giỏ
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="related-item rounded">
-                    <div class="related-item-inner border rounded">
-                        <div class="related-item-inner-item">
-                            <img src="~/img/product-5.png" class="img-fluid w-100 rounded-top" alt="">
-                            <div class="related-new">Mới</div>
-                        </div>
-                        <div class="text-center rounded-bottom p-4">
-                            <a href="#" class="d-block mb-2">Vi điều khiển</a>
-                            <a href="#" class="d-block h4">Arduino Uno R3</a>
-                            <span class="text-primary fs-5">220.000đ</span>
-                        </div>
-                    </div>
-                    <div class="related-item-add border border-top-0 rounded-bottom text-center p-4 pt-0">
-                        <a href="#" class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4">
-                            <i class="fas fa-shopping-cart me-2"></i> Thêm vào giỏ
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 @section Scripts {
     <script>

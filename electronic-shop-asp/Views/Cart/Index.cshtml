@@ -1,0 +1,73 @@
+﻿@model electronic_shop_asp.Models.Cart
+
+@{
+    ViewData["Title"] = "Giỏ hàng";
+    var items = Model.CartItems?.ToList() ?? new List<electronic_shop_asp.Models.CartItem>();
+    decimal total = items.Sum(x => (x.Product?.Price ?? 0) * x.Quantity);
+}
+
+<div class="container py-5">
+    <h2 class="mb-4">Giỏ hàng của bạn</h2>
+
+    @if (!items.Any())
+    {
+        <div class="alert alert-info">Giỏ hàng đang trống.</div>
+        <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Tiếp tục mua hàng</a>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-bordered text-center align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>Ảnh</th>
+                        <th>Sản phẩm</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                        <th>Xóa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in items)
+                    {
+                        <tr>
+                            <td style="width:120px;">
+                                <img src="~/img/@item.Product?.ImageUrl" class="img-fluid" style="max-height:80px;" />
+                            </td>
+                            <td>@item.Product?.Name</td>
+                            <td>@((item.Product?.Price ?? 0).ToString("N0")) đ</td>
+                            <td>
+                                <form asp-controller="Cart" asp-action="UpdateCart" method="post" class="d-flex justify-content-center gap-2">
+                                    <input type="hidden" name="cartItemId" value="@item.Id" />
+                                    <input type="number" name="quantity" value="@item.Quantity" min="1" class="form-control" style="width:80px;" />
+                                    <button type="submit" class="btn btn-sm btn-primary">Cập nhật</button>
+                                </form>
+                            </td>
+                            <td>@(((item.Product?.Price ?? 0) * item.Quantity).ToString("N0")) đ</td>
+                            <td>
+                                <a asp-controller="Cart" asp-action="Remove" asp-route-cartItemId="@item.Id" class="btn btn-sm btn-danger">
+                                    Xóa
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div class="text-end mt-4">
+            <h4>Tổng cộng: <span class="text-primary">@total.ToString("N0") đ</span></h4>
+        </div>
+
+        <div class="d-flex justify-content-between mt-4">
+            <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Tiếp tục mua hàng</a>
+            <div>
+                <a asp-controller="Cart" asp-action="ClearCart" class="btn btn-outline-danger me-2">Xóa toàn bộ</a>
+                <a asp-controller="Order" asp-action="Checkout" class="btn btn-success rounded-pill px-4 py-2">
+                    Thanh toán
+                </a>
+            </div>
+        </div>
+    }
+</div>

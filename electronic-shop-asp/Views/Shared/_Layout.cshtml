@@ -83,8 +83,8 @@
                                 </small>
                             </a>
                             <div class="dropdown-menu rounded">
-                                <a href="#" class="dropdown-item">Thông tin cá nhân</a>
-                                <a href="#" class="dropdown-item">Đơn hàng của tôi</a>
+                                <a asp-controller="Account" asp-action="Profile" class="dropdown-item">Thông tin cá nhân</a>
+                                <a asp-controller="Order" asp-action="History" class="dropdown-item">Đơn hàng của tôi</a>
                                 <a asp-controller="Account" asp-action="Logout" class="dropdown-item">Đăng xuất</a>
                             </div>
                         </div>
@@ -122,26 +122,32 @@
 
             <div class="col-md-4 col-lg-6 text-center">
                 <div class="position-relative ps-4">
-                    <div class="d-flex border rounded-pill">
-                        <input class="form-control border-0 rounded-pill w-100 py-3" type="text" placeholder="Bạn đang tìm gì?">
-                        <button type="button" class="btn btn-primary rounded-pill py-3 px-5" style="border: 0;">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
+                    <form asp-controller="Product" asp-action="Shop" method="get" class="w-100">
+                        <div class="d-flex border rounded-pill">
+                            <input name="searchString"
+                                   value="@Context.Request.Query["searchString"]"
+                                   class="form-control border-0 rounded-pill w-100 py-3"
+                                   type="text"
+                                   placeholder="Bạn đang tìm gì?" />
+
+                            <button type="submit" class="btn btn-primary rounded-pill py-3 px-5" style="border: 0;">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
 
             <div class="col-md-4 col-lg-3 text-center text-lg-end">
                 <div class="d-inline-flex align-items-center">
-                    <a href="#" class="text-muted d-flex align-items-center justify-content-center me-3">
-                        <span class="rounded-circle btn-md-square border"><i class="fas fa-random"></i></span>
-                    </a>
-                    <a href="#" class="text-muted d-flex align-items-center justify-content-center me-3">
-                        <span class="rounded-circle btn-md-square border"><i class="fas fa-heart"></i></span>
-                    </a>
-                    <a asp-controller="Cart" asp-action="Index" class="text-muted d-flex align-items-center justify-content-center">
-                        <span class="rounded-circle btn-md-square border"><i class="fas fa-shopping-cart"></i></span>
-                        <span class="text-dark ms-2">0đ</span>
+                    <a class ="text-muted d-flex align-items-center justify-content-center me-3>
+                        <span class="text-dark ms-2">
+                            @await Component.InvokeAsync("WishlistCount")
+                        </span>
+
+                        <span class="text-dark ms-2">
+                            @await Component.InvokeAsync("CartCount")
+                        </span>
                     </a>
                 </div>
             </div>
@@ -159,13 +165,7 @@
                     </button>
                     <div class="collapse navbar-collapse rounded-bottom" id="allCat">
                         <div class="navbar-nav ms-auto py-0">
-                            <ul class="list-unstyled categories-bars">
-                                <li><div class="categories-bars-item"><a href="#">Điện trở</a><span>(3)</span></div></li>
-                                <li><div class="categories-bars-item"><a href="#">Tụ điện</a><span>(5)</span></div></li>
-                                <li><div class="categories-bars-item"><a href="#">IC</a><span>(2)</span></div></li>
-                                <li><div class="categories-bars-item"><a href="#">Cảm biến</a><span>(8)</span></div></li>
-                                <li><div class="categories-bars-item"><a href="#">Module</a><span>(5)</span></div></li>
-                            </ul>
+                            @await Component.InvokeAsync("CategoryMenu")
                         </div>
                     </div>
                 </nav>

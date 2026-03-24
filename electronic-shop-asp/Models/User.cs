@@ -20,5 +20,7 @@ namespace electronic_shop_asp.Models
         public string? Address { get; set; }
 
         public string Role { get; set; } = "User";
+
+        public Cart? Cart { get; set; }
     }
 }

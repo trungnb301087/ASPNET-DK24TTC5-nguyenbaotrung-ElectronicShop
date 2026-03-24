@@ -1,0 +1,110 @@
+﻿@model IEnumerable<electronic_shop_asp.Models.Product>
+
+@{
+    ViewData["Title"] = "Sản phẩm";
+}
+@if (!string.IsNullOrEmpty(ViewBag.SearchString))
+{
+    <div class="mb-3">
+        <h5>Kết quả tìm kiếm cho: <span class="text-primary">"@ViewBag.SearchString"</span></h5>
+    </div>
+}
+@if (!Model.Any())
+{
+    <div class="col-12">
+        <div class="alert alert-info">
+            Không tìm thấy sản phẩm phù hợp.
+        </div>
+    </div>
+}
+<div class="container-fluid page-header py-5">
+    <h1 class="text-center text-white display-6">Sản phẩm</h1>
+    <ol class="breadcrumb justify-content-center mb-0">
+        <li class="breadcrumb-item">
+            <a asp-controller="Home" asp-action="Index">Trang chủ</a>
+        </li>
+        <li class="breadcrumb-item active text-white">Sản phẩm</li>
+    </ol>
+</div>
+
+<div class="container-fluid shop py-5">
+    <div class="container py-5">
+        <div class="row g-4">
+
+            <div class="col-lg-3">
+                <div class="product-categories mb-4">
+                    <h4>Danh mục sản phẩm</h4>
+                    @await Component.InvokeAsync("CategoryMenu")
+                </div>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="row g-4 product">
+                    @if (!Model.Any())
+                    {
+                        <div class="col-12">
+                            <div class="alert alert-info">
+                                Không có sản phẩm nào trong danh mục này.
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        @foreach (var item in Model)
+                        {
+                            <div class="col-md-6 col-lg-4 d-flex">
+                                <div class="product-item rounded wow fadeInUp w-100" data-wow-delay="0.1s">
+
+                                    <div class="product-item-inner border rounded">
+                                        <div class="product-item-inner-item"
+                                             style="height:250px; overflow:hidden; display:flex; align-items:center; justify-content:center;">
+
+                                            <img src="~/img/@item.ImageUrl"
+                                                 style="max-height:100%; max-width:100%; object-fit:contain;"
+                                                 class="img-fluid"
+                                                 alt="@item.Name">
+
+                                            <div class="product-new">Mới</div>
+
+                                            <div class="product-details">
+                                                <a asp-controller="Product"
+                                                   asp-action="Detail"
+                                                   asp-route-id="@item.Id">
+                                                    <i class="fa fa-eye fa-1x"></i>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="text-center rounded-bottom p-4">
+                                            <a href="#" class="d-block mb-2">
+                                                @(item.Category != null ? item.Category.Name : "Chưa phân loại")
+                                            </a>
+
+                                            <a asp-controller="Product" asp-action="Detail" asp-route-id="@item.Id" class="d-block h4">
+                                                @item.Name
+                                            </a>
+
+                                            <span class="text-primary fs-5">
+                                                @item.Price.ToString("N0")đ
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-item-add border border-top-0 rounded-bottom text-center p-4 pt-0">
+                                        <button type="button"
+                                                class="btn btn-primary border-secondary rounded-pill py-2 px-4 mb-4 add-to-cart-btn"
+                                                data-product-id="@item.Id">
+                                            <i class="fas fa-shopping-cart me-2"></i> Thêm vào giỏ hàng
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

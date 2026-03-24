@@ -13,11 +13,26 @@ namespace electronic_shop_asp.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Shop()
+        public async Task<IActionResult> Shop(int? categoryId, string? searchString)
         {
-            var products = await _context.Products
+            var query = _context.Products
                 .Include(p => p.Category)
-                .ToListAsync();
+                .AsQueryable();
+
+            if (categoryId.HasValue)
+            {
+                query = query.Where(p => p.CategoryId == categoryId.Value);
+            }
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                query = query.Where(p => p.Name.Contains(searchString));
+            }
+
+            var products = await query.ToListAsync();
+
+            ViewBag.SelectedCategoryId = categoryId;
+            ViewBag.SearchString = searchString;
 
             return View(products);
         }

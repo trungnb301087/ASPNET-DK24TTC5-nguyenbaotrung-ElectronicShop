@@ -1,0 +1,17 @@
+﻿@model List<electronic_shop_asp.Models.CategoryMenuViewModel>
+
+<ul class="list-unstyled categories-bars">
+    @foreach (var item in Model)
+    {
+        <li>
+            <div class="categories-bars-item">
+                <a asp-controller="Product"
+                   asp-action="Shop"
+                   asp-route-categoryId="@item.Id">
+                    @item.Name
+                </a>
+                <span>(@item.ProductCount)</span>
+            </div>
+        </li>
+    }
+</ul>

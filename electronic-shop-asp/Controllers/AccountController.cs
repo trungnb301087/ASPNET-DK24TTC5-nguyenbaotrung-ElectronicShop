@@ -71,7 +71,98 @@ namespace electronic_shop_asp.Controllers
 
             return RedirectToAction("Login");
         }
+        [HttpGet]
+        public async Task<IActionResult> Profile()
+        {
+            var userIdString = HttpContext.Session.GetString("UserId");
+            if (string.IsNullOrEmpty(userIdString))
+            {
+                return RedirectToAction("Login");
+            }
 
+            int userId = int.Parse(userIdString);
+
+            var user = await _context.Users.FindAsync(userId);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return View(user);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Profile(User model)
+        {
+            var userIdString = HttpContext.Session.GetString("UserId");
+            if (string.IsNullOrEmpty(userIdString))
+            {
+                return RedirectToAction("Login");
+            }
+
+            int userId = int.Parse(userIdString);
+
+            var user = await _context.Users.FindAsync(userId);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var emailExists = await _context.Users.AnyAsync(u => u.Email == model.Email && u.Id != userId);
+            if (emailExists)
+            {
+                ViewBag.Error = "Email đã được sử dụng bởi tài khoản khác";
+                return View(model);
+            }
+
+            user.FullName = model.FullName;
+            user.Email = model.Email;
+            user.Phone = model.Phone;
+            user.Address = model.Address;
+
+            await _context.SaveChangesAsync();
+
+            HttpContext.Session.SetString("UserEmail", user.Email);
+            HttpContext.Session.SetString("UserName", user.FullName);
+
+            ViewBag.Success = "Cập nhật thông tin thành công";
+            return View(user);
+        }
+        [HttpPost]
+        public async Task<IActionResult> ChangePassword(string currentPassword, string newPassword, string confirmPassword)
+        {
+            var userIdString = HttpContext.Session.GetString("UserId");
+            if (string.IsNullOrEmpty(userIdString))
+            {
+                return RedirectToAction("Login");
+            }
+
+            int userId = int.Parse(userIdString);
+
+            var user = await _context.Users.FindAsync(userId);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            if (user.Password != currentPassword)
+            {
+                ViewBag.Error = "Mật khẩu hiện tại không đúng";
+                return View();
+            }
+
+            if (newPassword != confirmPassword)
+            {
+                ViewBag.Error = "Xác nhận mật khẩu không khớp";
+                return View();
+            }
+
+            user.Password = newPassword;
+            await _context.SaveChangesAsync();
+
+            ViewBag.Success = "Đổi mật khẩu thành công";
+            return View();
+        }
         public IActionResult Logout()
         {
             HttpContext.Session.Clear();
